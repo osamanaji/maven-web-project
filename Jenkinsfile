@@ -21,12 +21,12 @@ stages {
               sh 'mvn package'
             }
         }
-		/*stage('Deploy') { 
+	
+	stage('Deploy') { 
             steps {
-              sshagent(['jenkins_agent']) {
-		sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/maven-web-project-batch-10/target/maven-web-application.war ubuntu@172.31.93.49:/opt/apache-tomcat-8.5.82/webapps/"
-}
-            } 
-        } */
+             sshagent(['tomcat_deploy']) {
+		sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/maven_deploy/target/maven-web-application.war ubuntu@54.164.100.159:/opt/apache-tomcat-8.5.84/webapps'   
+            }
+        }
 	}
 }
