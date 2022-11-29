@@ -6,7 +6,7 @@ stages {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-user', url: 'https://github.com/devopsdeepdive/maven-web-project.git']]]) 
             }
         }
-		stage('Compile') { 
+		stage('Build') { 
             steps {
               sh 'mvn compile'
             }
