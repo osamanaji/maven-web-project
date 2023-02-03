@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1 align="center">Welcome to DevOpsDeepDive. Bengaluru,Karnataka </h1>
-<h1 align="center"> DevOpsDeepDive- Very Good Training center for DevOps with AWS and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
+<h1 align="center"> DevOpsDeepDive- Very Good Training center for DevOps with AWS and also for Job Assitance Job Support also...Teaching DevOps Real Time scenarios</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
