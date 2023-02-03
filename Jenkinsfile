@@ -25,13 +25,13 @@ sh 'pwd'
   }*/
   
   
-  /*stage('TomcatDeply') {
+  stage('TomcatDeply') {
     steps {
     sshagent(['tomcat_server']) {
-sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/maven-deploy-project-pipeline/target/maven-web-project-1.2-RELEASE.war ubuntu@172.31.22.111:/var/lib/tomcat9/webapps/'
+sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/maven-web-project-pipeline/target/maven-web-application.war ubuntu@172.31.22.111:/var/lib/tomcat9/webapps/'
 }
     }
-  }*/
+  }
   
  
 }
