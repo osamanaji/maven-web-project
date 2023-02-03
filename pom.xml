@@ -164,13 +164,4 @@
 							
 </plugins>
 	</build>
-	<distributionManagement>
-    <snapshotRepository>
-        <id>jfrog</id>
-        <name>DevOps-snapshots</name>
-        <url>http://localhost:8081/artifactory/local-snapshot-repo</url>
-    </snapshotRepository>
-</distributionManagement>
-	
-	
 </project>
